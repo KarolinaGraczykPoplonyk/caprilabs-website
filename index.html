@@ -25,8 +25,8 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Helvetica, Arial, sans-serif;
-      background: #07111f;
-      color: #f7f9fc;
+      background: #f7f3ed;
+      color: #102238;
       line-height: 1.6;
     }
 
@@ -47,11 +47,12 @@
       justify-content: space-between;
       align-items: center;
       padding: 30px 7%;
+      color: #102238;
     }
 
     .brand {
       font-size: 1.25rem;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.16em;
     }
 
@@ -59,11 +60,11 @@
       display: flex;
       gap: 32px;
       font-size: 0.95rem;
-      color: #d8e1ec;
+      font-weight: 500;
     }
 
     .nav-links a:hover {
-      color: #ffffff;
+      opacity: 0.6;
     }
 
     /* HERO */
@@ -75,8 +76,23 @@
       align-items: center;
       padding: 120px 7% 70px;
       background:
-        radial-gradient(circle at 75% 35%, rgba(222, 157, 88, 0.16), transparent 30%),
-        linear-gradient(135deg, #07111f 0%, #0b1d32 55%, #17283b 100%);
+        radial-gradient(
+          circle at 78% 48%,
+          rgba(255, 211, 137, 0.72),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 38% 70%,
+          rgba(255, 190, 151, 0.40),
+          transparent 36%
+        ),
+        linear-gradient(
+          145deg,
+          #8fc6ed 0%,
+          #c7dff1 32%,
+          #f3e4d1 66%,
+          #ffdaa0 100%
+        );
       overflow: hidden;
     }
 
@@ -84,9 +100,12 @@
       min-height: 620px;
       border-radius: 30px;
       background:
-        linear-gradient(180deg, rgba(7, 17, 31, 0.08), rgba(7, 17, 31, 0.35)),
+        linear-gradient(
+          180deg,
+          rgba(255,255,255,0.05),
+          rgba(255,255,255,0.10)
+        ),
         url("capri-labs-hero.png") center center / cover no-repeat;
-      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
     }
 
     .hero-content {
@@ -95,15 +114,16 @@
     }
 
     .eyebrow {
-      color: #e5b36d;
+      color: #9b642d;
       text-transform: uppercase;
       letter-spacing: 0.22em;
       font-size: 0.8rem;
-      font-weight: 700;
+      font-weight: 800;
       margin-bottom: 22px;
     }
 
     h1 {
+      color: #102238;
       font-size: clamp(3rem, 6vw, 6.2rem);
       line-height: 0.98;
       letter-spacing: -0.055em;
@@ -111,7 +131,7 @@
     }
 
     .hero-content p {
-      color: #c5d0dc;
+      color: #344b61;
       font-size: 1.13rem;
       max-width: 570px;
       margin-bottom: 36px;
@@ -120,29 +140,29 @@
     .button {
       display: inline-block;
       padding: 15px 25px;
-      border: 1px solid rgba(255, 255, 255, 0.32);
+      border: 1px solid #102238;
       border-radius: 999px;
-      font-weight: 600;
+      font-weight: 700;
       transition: 0.25s ease;
     }
 
     .button:hover {
-      background: #ffffff;
-      color: #07111f;
+      background: #102238;
+      color: #ffffff;
     }
 
-    /* GENERAL SECTIONS */
+    /* GENERAL */
 
     section {
       padding: 110px 8%;
     }
 
     .section-label {
-      color: #b47a38;
+      color: #a66c32;
       text-transform: uppercase;
       letter-spacing: 0.2em;
       font-size: 0.78rem;
-      font-weight: 700;
+      font-weight: 800;
       margin-bottom: 20px;
     }
 
@@ -163,15 +183,15 @@
     /* ABOUT */
 
     .about {
-      background: #f4f1eb;
-      color: #101820;
+      background: #fffaf3;
+      color: #102238;
     }
 
     /* WORK */
 
     .work {
       background: #ffffff;
-      color: #101820;
+      color: #102238;
     }
 
     .project-card {
@@ -180,13 +200,19 @@
       grid-template-columns: 1fr 1fr;
       border-radius: 30px;
       overflow: hidden;
-      background: #ece5dc;
+      background: #f0e6db;
       min-height: 460px;
+      box-shadow: 0 25px 60px rgba(50, 60, 70, 0.08);
     }
 
     .project-visual {
       background:
-        radial-gradient(circle at 50% 35%, #f5d8c7 0%, #d8b7a5 40%, #8fa4ad 100%);
+        radial-gradient(
+          circle at 50% 35%,
+          #f8dccb 0%,
+          #dcbca8 42%,
+          #9bb5c3 100%
+        );
       display: flex;
       justify-content: center;
       align-items: center;
@@ -196,7 +222,6 @@
     .sound-wave {
       width: 75%;
       height: 130px;
-      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -207,7 +232,7 @@
       display: block;
       width: 5px;
       border-radius: 10px;
-      background: rgba(255, 255, 255, 0.82);
+      background: rgba(255, 255, 255, 0.86);
     }
 
     .sound-wave span:nth-child(1) { height: 25%; }
@@ -247,17 +272,24 @@
     .text-link {
       margin-top: 10px;
       font-weight: 700;
-      color: #17283b;
+      color: #17344d;
     }
 
     /* FUTURE */
 
     .future {
-      background: #0b1726;
+      background:
+        linear-gradient(
+          135deg,
+          #dcebf5 0%,
+          #f6eee3 55%,
+          #f5d7ad 100%
+        );
+      color: #102238;
     }
 
     .future .section-copy {
-      color: #bac6d2;
+      color: #465c70;
     }
 
     .future-grid {
@@ -268,11 +300,12 @@
     }
 
     .future-card {
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(16, 34, 56, 0.12);
       border-radius: 22px;
       padding: 35px;
       min-height: 210px;
-      background: rgba(255, 255, 255, 0.025);
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(8px);
     }
 
     .future-card h3 {
@@ -281,15 +314,15 @@
     }
 
     .future-card p {
-      color: #aebbc8;
+      color: #536679;
       font-size: 0.96rem;
     }
 
     /* CONTACT */
 
     .contact {
-      background: #e8ded2;
-      color: #101820;
+      background: #fff8ef;
+      color: #102238;
       text-align: center;
     }
 
@@ -305,23 +338,23 @@
     }
 
     .contact .button {
-      border-color: #101820;
+      border-color: #102238;
     }
 
     .contact .button:hover {
-      background: #101820;
+      background: #102238;
       color: #ffffff;
     }
 
     /* FOOTER */
 
     footer {
-      background: #07111f;
+      background: #102238;
       padding: 35px 7%;
       display: flex;
       justify-content: space-between;
       gap: 30px;
-      color: #8290a0;
+      color: #d6e0e8;
       font-size: 0.86rem;
     }
 
@@ -337,6 +370,7 @@
     /* MOBILE */
 
     @media (max-width: 850px) {
+
       nav {
         padding: 24px 6%;
       }
@@ -404,12 +438,20 @@
 
     <header class="hero">
 
-      <div class="hero-art" aria-label="Futuristic Capricorn overlooking a mountain landscape"></div>
+      <div
+        class="hero-art"
+        aria-label="Capri Labs future technology artwork">
+      </div>
 
       <div class="hero-content">
-        <div class="eyebrow">Capri Labs Limited</div>
 
-        <h1>Building ideas for a digital future.</h1>
+        <div class="eyebrow">
+          Capri Labs Limited
+        </div>
+
+        <h1>
+          Building ideas for a digital future.
+        </h1>
 
         <p>
           Capri Labs is an independent digital product company creating
@@ -417,14 +459,19 @@
           AI and emerging digital experiences.
         </p>
 
-        <a class="button" href="#work">Explore our work ↓</a>
+        <a class="button" href="#work">
+          Explore our work ↓
+        </a>
+
       </div>
 
     </header>
 
     <section class="about" id="about">
 
-      <div class="section-label">About Capri Labs</div>
+      <div class="section-label">
+        About Capri Labs
+      </div>
 
       <h2 class="section-title">
         Independent ideas. Thoughtful technology. New possibilities.
@@ -442,7 +489,9 @@
 
     <section class="work" id="work">
 
-      <div class="section-label">Our Work</div>
+      <div class="section-label">
+        Our Work
+      </div>
 
       <h2 class="section-title">
         From an idea to something people can experience.
@@ -451,6 +500,7 @@
       <div class="project-card">
 
         <div class="project-visual">
+
           <div class="sound-wave" aria-hidden="true">
             <span></span>
             <span></span>
@@ -462,13 +512,18 @@
             <span></span>
             <span></span>
           </div>
+
         </div>
 
         <div class="project-info">
 
-          <div class="section-label">BinaBalance</div>
+          <div class="section-label">
+            BinaBalance
+          </div>
 
-          <h3>A sensory wellbeing experience.</h3>
+          <h3>
+            A sensory wellbeing experience.
+          </h3>
 
           <p>
             BinaBalance is an adult wellbeing app built around immersive
@@ -495,7 +550,9 @@
             is not intended to replace meals or suppress physical hunger.
           </p>
 
-          <a class="text-link" href="privacy-policy.html">
+          <a
+            class="text-link"
+            href="privacy-policy.html">
             BinaBalance Privacy Policy →
           </a>
 
@@ -507,7 +564,9 @@
 
     <section class="future" id="future">
 
-      <div class="section-label">Looking Forward</div>
+      <div class="section-label">
+        Looking Forward
+      </div>
 
       <h2 class="section-title">
         Exploring what digital products can become.
@@ -551,7 +610,9 @@
 
     <section class="contact" id="contact">
 
-      <div class="section-label">Contact</div>
+      <div class="section-label">
+        Contact
+      </div>
 
       <h2 class="section-title">
         Ideas, opportunities and conversations.
@@ -562,7 +623,9 @@
         enquiries relating to Capri Labs, contact us by email.
       </p>
 
-      <a class="button" href="mailto:support@caprilabs.uk">
+      <a
+        class="button"
+        href="mailto:support@caprilabs.uk">
         support@caprilabs.uk
       </a>
 
@@ -571,14 +634,21 @@
   </main>
 
   <footer>
+
     <div>
       © 2026 Capri Labs Limited. All rights reserved.
     </div>
 
     <div>
-      <a href="privacy-policy.html">Privacy</a>
-      <a href="mailto:support@caprilabs.uk">Contact</a>
+      <a href="privacy-policy.html">
+        Privacy
+      </a>
+
+      <a href="mailto:support@caprilabs.uk">
+        Contact
+      </a>
     </div>
+
   </footer>
 
 </body>

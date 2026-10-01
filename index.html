@@ -331,7 +331,7 @@
       margin-right: auto;
     }
 
-    .contact p {
+    .contact > p {
       color: #526171;
       max-width: 650px;
       margin: 0 auto 32px;
@@ -344,6 +344,61 @@
     .contact .button:hover {
       background: #102238;
       color: #ffffff;
+    }
+
+    /* CONTACT FORM */
+
+    .contact-form {
+      max-width: 720px;
+      margin: 42px auto 0;
+      text-align: left;
+      display: grid;
+      gap: 22px;
+    }
+
+    .form-group {
+      display: grid;
+      gap: 8px;
+    }
+
+    .form-group label {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #102238;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 15px 17px;
+      border: 1px solid rgba(16, 34, 56, 0.22);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.78);
+      color: #102238;
+      font: inherit;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #102238;
+      box-shadow: 0 0 0 3px rgba(16, 34, 56, 0.08);
+    }
+
+    .contact-form .button {
+      justify-self: center;
+      cursor: pointer;
+      background: transparent;
+      color: #102238;
+      font: inherit;
     }
 
     /* FOOTER */
@@ -619,15 +674,91 @@
       </h2>
 
       <p>
-        For product support, business enquiries, collaboration or other
-        enquiries relating to Capri Labs, contact us by email.
+        Whether you need support with BinaBalance, have a business enquiry,
+        or would like to discuss a potential collaboration, send us a message.
       </p>
 
-      <a
-        class="button"
-        href="mailto:support@caprilabs.uk">
-        support@caprilabs.uk
-      </a>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-form">
+
+        <input
+          type="hidden"
+          name="access_key"
+          value="6c98dc79-d3f8-4036-a5c6-4b2dd3569217">
+
+        <input
+          type="hidden"
+          name="subject"
+          value="New enquiry from Capri Labs website">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="enquiry">I'm contacting Capri Labs about</label>
+
+          <select
+            id="enquiry"
+            name="enquiry"
+            required>
+
+            <option value="">
+              Select an option
+            </option>
+
+            <option value="BinaBalance Support">
+              BinaBalance Support
+            </option>
+
+            <option value="Business Enquiry">
+              Business Enquiry
+            </option>
+
+            <option value="Collaboration or Partnership">
+              Collaboration / Partnership
+            </option>
+
+            <option value="Other">
+              Other
+            </option>
+
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required></textarea>
+        </div>
+
+        <button type="submit" class="button">
+          Send message
+        </button>
+
+      </form>
 
     </section>
 
@@ -644,7 +775,7 @@
         Privacy
       </a>
 
-      <a href="mailto:support@caprilabs.uk">
+      <a href="#contact">
         Contact
       </a>
     </div>

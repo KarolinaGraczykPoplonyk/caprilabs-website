@@ -60,7 +60,7 @@
       display: flex;
       gap: 32px;
       font-size: 0.95rem;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .nav-links a:hover {
@@ -113,34 +113,35 @@
       max-width: 650px;
     }
 
-    .eyebrow {
+    .hero-company {
       color: #102238;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 1.25rem;
+      font-size: clamp(2.7rem, 4.5vw, 4.5rem);
+      line-height: 1;
+      letter-spacing: -0.045em;
       font-weight: 800;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
-    h1 {
-      color: #526171;
-      font-size: clamp(2.5rem, 4.5vw, 4.5rem);
-      line-height: 1.05;
-      letter-spacing: -0.045em;
-      font-weight: 700;
+    .hero-statement {
+      color: #596b7c;
+      font-size: clamp(1.7rem, 2.7vw, 2.6rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      font-weight: 600;
       margin-bottom: 28px;
+      max-width: 570px;
     }
 
     .hero-content p {
-      color: #667786;
-      font-size: 1.08rem;
+      color: #6a7b89;
+      font-size: 1.05rem;
       max-width: 570px;
-      margin-bottom: 36px;
+      margin-bottom: 34px;
     }
 
     .button {
       display: inline-block;
-      padding: 15px 25px;
+      padding: 14px 24px;
       border: 1px solid #102238;
       border-radius: 999px;
       font-weight: 700;
@@ -152,63 +153,57 @@
       color: #ffffff;
     }
 
-    /* GENERAL */
+    /* GENERAL SECTION TYPOGRAPHY */
 
     section {
-      padding: 100px 8%;
+      padding: 85px 8%;
     }
 
-    .section-label {
+    .section-heading {
       color: #102238;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 1.3rem;
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -0.035em;
       font-weight: 800;
       margin-bottom: 18px;
     }
 
-    .section-title {
-      color: #526171;
-      font-size: clamp(1.55rem, 2.4vw, 2.2rem);
-      line-height: 1.25;
-      letter-spacing: -0.025em;
-      font-weight: 600;
+    .section-subheading {
+      color: #607181;
+      font-size: clamp(1.25rem, 1.9vw, 1.65rem);
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+      font-weight: 500;
       max-width: 850px;
-      margin-bottom: 28px;
+      margin-bottom: 25px;
     }
 
     .section-copy {
-      max-width: 760px;
-      color: #667786;
-      font-size: 1.03rem;
+      max-width: 800px;
+      color: #6d7c89;
+      font-size: 1.02rem;
     }
 
     /* ABOUT */
 
     .about {
       background: #fffaf3;
-      color: #102238;
     }
 
     /* APPS */
 
-    .work {
+    .apps {
       background: #ffffff;
-      color: #102238;
-    }
-
-    .apps-intro {
-      max-width: 760px;
     }
 
     .project-card {
-      margin-top: 45px;
+      margin-top: 42px;
       display: grid;
       grid-template-columns: 0.85fr 1.15fr;
       border-radius: 30px;
       overflow: hidden;
       background: #f3e8df;
-      min-height: 520px;
+      min-height: 510px;
       box-shadow: 0 25px 60px rgba(50, 60, 70, 0.08);
     }
 
@@ -223,11 +218,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 60px;
+      padding: 55px;
     }
 
     .app-icon {
-      width: min(280px, 78%);
+      width: min(270px, 78%);
       aspect-ratio: 1 / 1;
       object-fit: cover;
       border-radius: 25%;
@@ -235,7 +230,7 @@
     }
 
     .project-info {
-      padding: 65px;
+      padding: 60px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -243,7 +238,7 @@
 
     .product-name {
       color: #102238;
-      font-size: clamp(2.8rem, 4vw, 4rem);
+      font-size: clamp(2.7rem, 4vw, 4rem);
       line-height: 1;
       letter-spacing: -0.045em;
       font-weight: 800;
@@ -251,40 +246,40 @@
     }
 
     .product-tagline {
-      color: #667786;
-      font-size: clamp(1.15rem, 1.7vw, 1.4rem);
-      line-height: 1.45;
+      color: #607181;
+      font-size: clamp(1.2rem, 1.7vw, 1.45rem);
+      line-height: 1.4;
       font-weight: 500;
       max-width: 680px;
       margin-bottom: 26px;
     }
 
     .project-info p {
-      color: #6c7a87;
+      color: #6d7c89;
       margin-bottom: 18px;
       font-size: 0.98rem;
       max-width: 700px;
     }
 
     .research-copy {
+      color: #778590 !important;
       font-size: 0.94rem !important;
-      color: #75828d !important;
     }
 
     .project-note {
-      margin-top: 5px;
-      padding-top: 18px;
+      margin-top: 4px;
+      padding-top: 17px;
       border-top: 1px solid rgba(16, 34, 56, 0.12);
+      color: #808b94 !important;
       font-size: 0.82rem !important;
       line-height: 1.6;
-      color: #7c8790 !important;
     }
 
     .project-links {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 24px;
+      gap: 22px;
       margin-top: 8px;
     }
 
@@ -299,7 +294,7 @@
       padding: 10px 16px;
       border-radius: 999px;
       background: rgba(16, 34, 56, 0.07);
-      color: #667786;
+      color: #687887;
       font-size: 0.82rem;
       font-weight: 700;
     }
@@ -314,15 +309,10 @@
           #f6eee3 55%,
           #f5d7ad 100%
         );
-      color: #102238;
-    }
-
-    .future .section-copy {
-      color: #667786;
     }
 
     .future-grid {
-      margin-top: 50px;
+      margin-top: 42px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
@@ -331,8 +321,8 @@
     .future-card {
       border: 1px solid rgba(16, 34, 56, 0.12);
       border-radius: 22px;
-      padding: 35px;
-      min-height: 210px;
+      padding: 34px;
+      min-height: 200px;
       background: rgba(255, 255, 255, 0.55);
       backdrop-filter: blur(8px);
     }
@@ -344,43 +334,34 @@
     }
 
     .future-card p {
-      color: #667786;
-      font-size: 0.96rem;
+      color: #687887;
+      font-size: 0.95rem;
     }
 
     /* CONTACT */
 
     .contact {
       background: #fff8ef;
-      color: #102238;
       text-align: center;
     }
 
-    .contact .section-title {
+    .contact .section-heading,
+    .contact .section-subheading {
       margin-left: auto;
       margin-right: auto;
     }
 
     .contact > p {
-      color: #667786;
+      color: #6d7c89;
       max-width: 650px;
-      margin: 0 auto 32px;
-    }
-
-    .contact .button {
-      border-color: #102238;
-    }
-
-    .contact .button:hover {
-      background: #102238;
-      color: #ffffff;
+      margin: 0 auto 30px;
     }
 
     /* CONTACT FORM */
 
     .contact-form {
       max-width: 720px;
-      margin: 42px auto 0;
+      margin: 38px auto 0;
       text-align: left;
       display: grid;
       gap: 22px;
@@ -475,15 +456,27 @@
 
       .hero-content {
         order: 2;
-        padding: 45px 0 0;
+        padding: 42px 0 0;
+      }
+
+      .hero-company {
+        font-size: 2.8rem;
+      }
+
+      .hero-statement {
+        font-size: 1.75rem;
       }
 
       section {
-        padding: 75px 7%;
+        padding: 70px 7%;
       }
 
-      .section-label {
-        font-size: 1.1rem;
+      .section-heading {
+        font-size: 2rem;
+      }
+
+      .section-subheading {
+        font-size: 1.2rem;
       }
 
       .project-card {
@@ -491,20 +484,20 @@
       }
 
       .project-visual {
-        min-height: 320px;
-        padding: 45px;
+        min-height: 310px;
+        padding: 42px;
       }
 
       .app-icon {
-        width: min(230px, 72%);
+        width: min(225px, 72%);
       }
 
       .project-info {
-        padding: 42px 30px;
+        padding: 40px 30px;
       }
 
       .product-name {
-        font-size: 2.8rem;
+        font-size: 2.7rem;
       }
 
       .product-tagline {
@@ -546,13 +539,13 @@
 
       <div class="hero-content">
 
-        <div class="eyebrow">
-          Capri Labs Limited
-        </div>
-
-        <h1>
-          Building ideas for a digital future.
+        <h1 class="hero-company">
+          Capri Labs
         </h1>
+
+        <div class="hero-statement">
+          Building ideas for a digital future.
+        </div>
 
         <p>
           Capri Labs is an independent digital product company creating
@@ -570,13 +563,13 @@
 
     <section class="about" id="about">
 
-      <div class="section-label">
+      <h2 class="section-heading">
         About Capri Labs
-      </div>
-
-      <h2 class="section-title">
-        Independent ideas. Thoughtful technology. New possibilities.
       </h2>
+
+      <div class="section-subheading">
+        Independent ideas. Thoughtful technology. New possibilities.
+      </div>
 
       <p class="section-copy">
         Capri Labs Limited is a UK-based independent digital product company.
@@ -588,15 +581,15 @@
 
     </section>
 
-    <section class="work" id="apps">
+    <section class="apps" id="apps">
 
-      <div class="section-label">
+      <h2 class="section-heading">
         Our Apps
-      </div>
-
-      <h2 class="section-title apps-intro">
-        Original ideas developed into real digital products.
       </h2>
+
+      <div class="section-subheading">
+        Original ideas developed into real digital products.
+      </div>
 
       <div class="project-card">
 
@@ -660,13 +653,13 @@
 
     <section class="future" id="future">
 
-      <div class="section-label">
+      <h2 class="section-heading">
         Looking Forward
-      </div>
-
-      <h2 class="section-title">
-        Exploring what digital products can become.
       </h2>
+
+      <div class="section-subheading">
+        Exploring what digital products can become.
+      </div>
 
       <p class="section-copy">
         Capri Labs is not built around a single product. BinaBalance is our
@@ -706,17 +699,16 @@
 
     <section class="contact" id="contact">
 
-      <div class="section-label">
-        Contact
-      </div>
-
-      <h2 class="section-title">
+      <h2 class="section-heading">
         Contact Capri Labs
       </h2>
 
+      <div class="section-subheading">
+        Product support, business enquiries and collaborations.
+      </div>
+
       <p>
-        Send us a message for product support, business enquiries,
-        collaborations or other enquiries.
+        Send us a message and select the reason for your enquiry below.
       </p>
 
       <form
@@ -762,25 +754,13 @@
             name="enquiry"
             required>
 
-            <option value="">
-              Select an option
-            </option>
-
-            <option value="BinaBalance Support">
-              BinaBalance Support
-            </option>
-
-            <option value="Business Enquiry">
-              Business Enquiry
-            </option>
-
+            <option value="">Select an option</option>
+            <option value="BinaBalance Support">BinaBalance Support</option>
+            <option value="Business Enquiry">Business Enquiry</option>
             <option value="Collaboration or Partnership">
               Collaboration / Partnership
             </option>
-
-            <option value="Other">
-              Other
-            </option>
+            <option value="Other">Other</option>
 
           </select>
         </div>
@@ -812,13 +792,8 @@
     </div>
 
     <div>
-      <a href="privacy-policy.html">
-        Privacy
-      </a>
-
-      <a href="#contact">
-        Contact
-      </a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="#contact">Contact</a>
     </div>
 
   </footer>

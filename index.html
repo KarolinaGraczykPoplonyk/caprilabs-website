@@ -187,63 +187,49 @@
       color: #102238;
     }
 
-    /* WORK */
+    /* APPS */
 
     .work {
       background: #ffffff;
       color: #102238;
     }
 
+    .apps-intro {
+      max-width: 760px;
+    }
+
     .project-card {
       margin-top: 55px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 0.85fr 1.15fr;
       border-radius: 30px;
       overflow: hidden;
-      background: #f0e6db;
-      min-height: 460px;
+      background: #f3e8df;
+      min-height: 520px;
       box-shadow: 0 25px 60px rgba(50, 60, 70, 0.08);
     }
 
     .project-visual {
       background:
         radial-gradient(
-          circle at 50% 35%,
-          #f8dccb 0%,
-          #dcbca8 42%,
-          #9bb5c3 100%
+          circle at 50% 38%,
+          rgba(255, 229, 211, 0.98) 0%,
+          rgba(224, 196, 180, 0.92) 44%,
+          rgba(167, 190, 202, 0.95) 100%
         );
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 50px;
+      padding: 60px;
     }
 
-    .sound-wave {
-      width: 75%;
-      height: 130px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
+    .app-icon {
+      width: min(280px, 78%);
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 25%;
+      box-shadow: 0 24px 55px rgba(16, 34, 56, 0.20);
     }
-
-    .sound-wave span {
-      display: block;
-      width: 5px;
-      border-radius: 10px;
-      background: rgba(255, 255, 255, 0.86);
-    }
-
-    .sound-wave span:nth-child(1) { height: 25%; }
-    .sound-wave span:nth-child(2) { height: 45%; }
-    .sound-wave span:nth-child(3) { height: 70%; }
-    .sound-wave span:nth-child(4) { height: 100%; }
-    .sound-wave span:nth-child(5) { height: 65%; }
-    .sound-wave span:nth-child(6) { height: 38%; }
-    .sound-wave span:nth-child(7) { height: 75%; }
-    .sound-wave span:nth-child(8) { height: 48%; }
-    .sound-wave span:nth-child(9) { height: 25%; }
 
     .project-info {
       padding: 65px;
@@ -252,27 +238,67 @@
       justify-content: center;
     }
 
-    .project-info h3 {
-      font-size: 2.7rem;
-      margin-bottom: 18px;
-      letter-spacing: -0.04em;
+    .product-name {
+      font-size: clamp(3rem, 5vw, 5rem);
+      line-height: 1;
+      letter-spacing: -0.055em;
+      color: #102238;
+      margin-bottom: 22px;
+    }
+
+    .product-tagline {
+      color: #263f55;
+      font-size: clamp(1.25rem, 2vw, 1.65rem);
+      line-height: 1.35;
+      font-weight: 650;
+      max-width: 680px;
+      margin-bottom: 28px;
     }
 
     .project-info p {
       color: #4e5a65;
-      margin-bottom: 20px;
-      font-size: 1.05rem;
+      margin-bottom: 18px;
+      font-size: 1rem;
+      max-width: 700px;
+    }
+
+    .research-copy {
+      font-size: 0.96rem !important;
+      color: #596976 !important;
     }
 
     .project-note {
-      font-size: 0.9rem !important;
-      color: #6c7780 !important;
+      margin-top: 5px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(16, 34, 56, 0.12);
+      font-size: 0.84rem !important;
+      line-height: 1.6;
+      color: #707b84 !important;
+    }
+
+    .project-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 8px;
     }
 
     .text-link {
-      margin-top: 10px;
       font-weight: 700;
       color: #17344d;
+    }
+
+    .app-store-coming {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(16, 34, 56, 0.07);
+      color: #526171;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
     }
 
     /* FUTURE */
@@ -458,11 +484,24 @@
       }
 
       .project-visual {
-        min-height: 300px;
+        min-height: 320px;
+        padding: 45px;
+      }
+
+      .app-icon {
+        width: min(230px, 72%);
       }
 
       .project-info {
-        padding: 40px 30px;
+        padding: 42px 30px;
+      }
+
+      .product-name {
+        font-size: clamp(2.8rem, 13vw, 4.2rem);
+      }
+
+      .product-tagline {
+        font-size: 1.2rem;
       }
 
       .future-grid {
@@ -483,7 +522,7 @@
 
     <div class="nav-links">
       <a href="#about">About</a>
-      <a href="#work">Our Work</a>
+      <a href="#apps">Our Apps</a>
       <a href="#future">What We Explore</a>
       <a href="#contact">Contact</a>
     </div>
@@ -514,8 +553,8 @@
           AI and emerging digital experiences.
         </p>
 
-        <a class="button" href="#work">
-          Explore our work ↓
+        <a class="button" href="#apps">
+          Explore our apps ↓
         </a>
 
       </div>
@@ -542,74 +581,69 @@
 
     </section>
 
-    <section class="work" id="work">
+    <section class="work" id="apps">
 
       <div class="section-label">
-        Our Work
+        Our Apps
       </div>
 
-      <h2 class="section-title">
-        From an idea to something people can experience.
+      <h2 class="section-title apps-intro">
+        Original ideas developed into real digital products.
       </h2>
 
       <div class="project-card">
 
         <div class="project-visual">
-
-          <div class="sound-wave" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-
+          <img
+            class="app-icon"
+            src="icon.png"
+            alt="BinaBalance app icon">
         </div>
 
         <div class="project-info">
 
-          <div class="section-label">
+          <h3 class="product-name">
             BinaBalance
-          </div>
-
-          <h3>
-            A sensory wellbeing experience.
           </h3>
 
-          <p>
-            BinaBalance is an adult wellbeing app built around immersive
-            listening experiences and personal reflection.
-          </p>
+          <div class="product-tagline">
+            Exploring immersive sound as a new approach to overeating and
+            stress-related eating management.
+          </div>
 
           <p>
-            It is designed for moments when urges to snack may be connected
-            with cravings, stress, emotion, boredom or habitual behaviour.
-            Users can explore eating sounds and calming sounds, compare their
-            own before-and-after ratings and observe personal patterns over time.
+            BinaBalance is an adult wellbeing app that uses immersive eating
+            and calming sound experiences during moments associated with
+            cravings, stress-related eating, boredom and habitual snacking.
           </p>
 
-          <p>
-            The concept draws inspiration from research exploring sensory
-            processing, food-related cues, attention and the relationship
-            between sound and perception. BinaBalance does not claim that
-            sound suppresses hunger or treats overeating.
+          <p class="research-copy">
+            The concept is inspired by research into sensory processing,
+            attention, habituation and eating behaviour, exploring how sound
+            and sensory experience may influence the way eating-related
+            experiences are perceived.
           </p>
 
           <p class="project-note">
-            BinaBalance is a general wellbeing and self-awareness tool for
-            adults aged 18+. It is not medical or nutritional treatment and
-            is not intended to replace meals or suppress physical hunger.
+            BinaBalance is a general wellbeing tool for adults aged 18+.
+            Individual responses may vary. It is not medical or nutritional
+            treatment and is not intended to replace meals or suppress
+            physical hunger.
           </p>
 
-          <a
-            class="text-link"
-            href="privacy-policy.html">
-            BinaBalance Privacy Policy →
-          </a>
+          <div class="project-links">
+
+            <a
+              class="text-link"
+              href="privacy-policy.html">
+              BinaBalance Privacy Policy →
+            </a>
+
+            <span class="app-store-coming">
+              App Store release in development
+            </span>
+
+          </div>
 
         </div>
 
@@ -674,7 +708,8 @@
       </h2>
 
       <p>
-        Send us a message for product support, business enquiries, collaborations or other enquiries.
+        Send us a message for product support, business enquiries,
+        collaborations or other enquiries.
       </p>
 
       <form
